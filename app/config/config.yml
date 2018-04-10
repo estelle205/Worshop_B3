@@ -30,6 +30,8 @@ framework:
     assets: ~
     php_errors:
         log: true
+    templating:
+        engines: ['twig']
 
 # Twig Configuration
 twig:
@@ -72,3 +74,6 @@ fos_user:
   db_driver: orm
   firewall_name: main
   user_class: AppBundle\Entity\User
+  from_email:
+    address: "205 Alle prev"
+    sender_name: "estelle.aubry"
